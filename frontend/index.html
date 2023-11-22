@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <form action="" onsubmit="cadastrarClientes(event)">
+            <fieldset>
+                <legend><b>Formulario do visitante</b></legend>
+                
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome"class="labelInput">Nome completo</label>
+                 </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="Email" id="Email" class="inputUser" required>
+                    <label for="Email"class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone"class="labelInput">Telefone</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit" class="inputUser" >
+                
+            </fieldset>
+        </form>
+        
+    </div>
+    <div class="lista">
+        <ul id="listaClientes">
+            <li>
+                <span>Nomes dos visitantes</span>
+            </li>
+        </ul>
+    </div>
+    <div class="lista">
+        <ul id="listaClientes2">
+            <li>
+            </li>
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

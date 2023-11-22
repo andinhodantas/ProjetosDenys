@@ -1,0 +1,9 @@
+FROM nginx:latest
+
+WORKDIR /usr/share/nginx/html/app/
+
+RUN apt-get update && apt-get upgrade && apt-get install git -y
+
+RUN git clone https://github.com/AmandaKly/denysfrontend.git .
+
+EXPOSE 80
